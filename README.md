@@ -6,7 +6,7 @@ Team members: Barmpas K., Gaunt W., Muttawa O., Varfolomeev V.
 
 ---
 
-[asthma1]: ./imgs/asthma00001.jpg
+[asthma1]: (./imgs/asthma00001.jpg =50x50)
 [asthma2]: ./imgs/asthma00002.jpg
 [asthma3]: ./imgs/asthma00003.jpg
 [asthma4]: ./imgs/asthma00004.jpg
@@ -40,7 +40,7 @@ In conjunction with our android app breathaway guides the children into taking t
 Our app registers the number of breaths per dose as well as the total number of doses and the number of doses taken correctly. It sends reminders to their mobile phones when it is time to take a dose and can even send all this data to a data base that could be accessed by their gp in order to fully track their progress.
 
 **The device**
-![asthma5]=24x48
+![asthma5]
 ![asthma6]
 
 
