@@ -1,4 +1,4 @@
-# ** Asthmaway **
+# **Asthmaway**
 ## Asthmaway - IoT Device Project for EE3-24 Embedded Systems - Imperial College London
 
 Team name: SmartAsses
@@ -39,12 +39,12 @@ In conjunction with our android app breathaway guides the children into taking t
 
 Our app registers the number of breaths per dose as well as the total number of doses and the number of doses taken correctly. It sends reminders to their mobile phones when it is time to take a dose and can even send all this data to a data base that could be accessed by their gp in order to fully track their progress.
 
-** The device **
+**The device**
 ![asthma5]
 ![asthma6]
 
 
-** The App **
+**The App**
 ![asthma1]
 ![asthma2]
 ![asthma3]
