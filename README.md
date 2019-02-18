@@ -40,7 +40,7 @@ In conjunction with our android app breathaway guides the children into taking t
 Our app registers the number of breaths per dose as well as the total number of doses and the number of doses taken correctly. It sends reminders to their mobile phones when it is time to take a dose and can even send all this data to a data base that could be accessed by their gp in order to fully track their progress.
 
 **The device**
-![asthma5]
+![asthma5] (https://github.com/favicon.ico =24x48)
 ![asthma6]
 
 
