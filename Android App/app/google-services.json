@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "63760935709",
+    "firebase_url": "https://ibreathe-33a37.firebaseio.com",
+    "project_id": "ibreathe-33a37",
+    "storage_bucket": "ibreathe-33a37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63760935709:android:1ba78da71f8da0e8",
+        "android_client_info": {
+          "package_name": "com.barmpas.asthma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63760935709-3in4jkdc462uttsd5p9b3ptn7q5cqfmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkM8esAu-odhETVTDRpkALIOVyKIT92TM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
