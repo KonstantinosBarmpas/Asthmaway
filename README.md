@@ -6,7 +6,7 @@ Team members: Barmpas K., Gaunt W., Muttawa O., Varfolomeev V.
 
 ---
 
-[asthma1]: (./imgs/asthma00001.jpg=20x20)
+[asthma1]: ./imgs/asthma00001.jpg
 [asthma2]: ./imgs/asthma00002.jpg
 [asthma3]: ./imgs/asthma00003.jpg
 [asthma4]: ./imgs/asthma00004.jpg
