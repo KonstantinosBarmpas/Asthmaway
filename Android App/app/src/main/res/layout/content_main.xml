@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/broker_down"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:layout_weight="0.28"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/broker"/>
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Failed to connect to the broker"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="(Connect to your home wifi and try to reconnect...)"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/connect"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="0.05"
+            android:layout_gravity="center"
+            android:src="@drawable/round_autorenew_white_48dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cb_color="#99CC00"
+            app:cb_pressedRingWidth="8dip" />
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.sfyc.ctpv.CountTimeProgressView
+            android:id="@+id/counter"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            app:backgroundColorCenter="#00B8D4"
+            app:borderWidth="3dp"
+            app:borderBottomColor="@color/colorPrimary"
+            app:borderDrawColor="#CDC8EA"
+            app:markBallColor="#64FFDA"
+            app:markBallFlag="true"
+            app:markBallWidth="3dp"
+            app:titleCenterColor="#FFFFFF"
+            app:titleCenterText="START SESSION"
+            app:titleCenterSize="18sp"
+            app:countTime="5000"
+            app:startAngle="0"
+            app:textStyle="jump"
+            app:clockwise="true" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/indicator_led"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cb_color="#B71C1C"
+            app:cb_pressedRingWidth="8dip" />
+
+        <TextView
+            android:id="@+id/device"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:text="Device is OFF"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:indicatorName="BallRotateIndicator" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/start_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/start_press"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device is ready"/>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:id="@+id/start_btn"
+            android:text="Start Session"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/indicator_led_start"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cb_color="#B71C1C"
+            app:cb_pressedRingWidth="8dip" />
+
+        <TextView
+            android:id="@+id/device_start"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:text="Device is OFF"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/breath_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:textColor="#B71C1C"
+            android:text="Too soon !"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_press"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:textColor="#76FF03"
+            android:text="Press!"/>
+
+        <TextView
+            android:id="@+id/text_breath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="Breathe in..."/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:indicatorName="BallScaleMultipleIndicator" />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/indicator_led_breathe"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cb_color="#B71C1C"
+            app:cb_pressedRingWidth="8dip" />
+
+        <TextView
+            android:id="@+id/device_breathe"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:text="Device is OFF"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/end_btn"
+            android:text="End Session"
+            android:textColor="#B71C1C"
+            android:textSize="15sp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/endbutton"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

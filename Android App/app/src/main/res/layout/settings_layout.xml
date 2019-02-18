@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:text="GP Settings"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:text="Sessions per day"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content" />
+
+            <NumberPicker
+                android:layout_weight="0.8"
+                android:id="@+id/times_per_day_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:text="Presses per session"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content" />
+
+            <NumberPicker
+                android:layout_weight="0.8"
+                android:id="@+id/number_of_air"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/result"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" />
+
+</LinearLayout>
