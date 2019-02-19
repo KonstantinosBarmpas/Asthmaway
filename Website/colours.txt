@@ -1,0 +1,8 @@
+Light blue = 24C4DA
+R 36
+G 196
+B 218
+Dark blue = 00B8D4
+R 0
+G 184
+B 212
