@@ -2,7 +2,7 @@
 ## Asthmaway - IoT Device Project for EE3-24 Embedded Systems - Imperial College London
 
 Team name: SmartAsses
-Team members: Barmpas K., Gaunt W., Muttawa O., Varfolomeev V.
+Team members: Barmpas K., Gaunt W., Muttawa O.
 
 ---
 
